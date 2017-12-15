@@ -1,0 +1,408 @@
+#playlist,#playlist .module,#playlist h3{ border-color:#b8b8b8; color:#727272; }
+#playlistContainer{ width: 468px;height: 300px; top:46px;left:20px;}
+#playlist h3, #entertainmentH h3{margin-left:5px;margin-top: 5px; border:none; color:#fff;font-family: 'Pacifico', cursive;font-size: 23px;font-weight: 300;font-style: normal; }
+
+#entertainmentContainer h4 {color:#fff;font-family: Helvetica, Arial, sans-serif;}
+#entertainmentH h3 {margin-top: 10px;margin-left: 10px}
+#entertainmentH #fbcommentbox {background-color: #eee;}
+
+#playlist .even{background-color:#FFF;}
+#playlist .odd{ background-color:#e6e6e6;}
+#playlist .focus{ background-color:#9a9a9a; color:#FFF;}
+
+#playlist .place-left, #entertainmentH .place-left {
+  float: left !important;
+  margin-right: 10px;
+}
+#playlist .place-right, #entertainmentH .place-right{
+  float: right !important;
+  margin-left: 10px;
+}
+/* For Back to player button. One under playlist div and another under entertainmentH*/
+#playlist .player-button, #entertainmentH .player-button{
+    right: 28px;
+}
+#playlist .sh-btn , #entertainmentH .sh-btn{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 14px;   
+  margin-top: 8px;   
+  cursor: pointer;
+  outline: none;
+  border: none; 
+  color: #333333;  
+  text-shadow: none;    
+  background-color: #DDD;
+
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding;
+  /* IE hacks */
+
+  zoom: 1;
+  z-index: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+
+  text-align: center;  
+  
+  vertical-align: inherit;
+}
+#playlist .sh-btn:hover, #entertainmentH .sh-btn:hover,
+#playlist .sh-btn:focus, #entertainmentH .sh-btn:focus,
+#playlist .sh-btn:active, #entertainmentH .sh-btn:active,
+#playlist .sh-btn.active, #entertainmentH .sh-btn.active{
+  background-color: #eee;
+ 
+}
+#playlist .sh-btn:active, #playlist .sh-btn.active,
+#entertainmentH .sh-btn:active, #entertainmentH .sh-btn.active {
+   background-color: #eee;
+
+}
+#playlist .sh-btn:focus, #entertainmentH .sh-btn:focus {
+  /* Blue border on button focus. */
+  border-color: #4D90FE;
+}
+/* overrides extra padding on button elements in Firefox */
+#playlist .sh-btn::-moz-focus-inner, #entertainmentH .sh-btn::-moz-focus-inner  {
+  padding: 0;
+  border: 0;
+}
+
+
+
+/* For Popup container */
+.wikHplayer{
+    position: fixed;    
+    clear: both;    
+    /* Need change bg color */
+    background-color: #fcbdbd;
+    z-index: 500;  
+}
+.wikHplayer.wik-side_bottom {
+    -moz-box-shadow: 1px -1px 3px #999;
+    -webkit-box-shadow: 1px -1px 3px #999;
+    box-shadow: 1px -1px 3px #999;
+}
+.wik-button {
+    position: absolute; 
+    /* Top determines button position*/
+    top: -46px;   
+    margin: 0;
+    padding: 0;
+    /* Need change bg color */
+    background-color: #fcbdbd;
+    cursor: pointer;
+    text-align: center;
+    line-height: 17px;
+
+    /* Text style */
+    color:#fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+}
+.wik-button span {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 3px;
+    padding: 0px;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1;
+}
+.wik-side_bottom .wik-button {    
+    -webkit-box-shadow: 1px -3px 3px #999;
+    box-shadow: 1px -3px 3px #999;
+}
+.wik-button .icon {    
+    display: inline-block;
+    background: url('icon.png') no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+/**** Popup Borders ****/
+.wik-borders.wikHplayer.wik-side_bottom {    
+    border: 3px solid #fff;    
+    border-bottom: none;
+}
+.wik-borders.wik-side_bottom .wik-button {
+    border: 3px solid #fff;
+    border-bottom: none;    
+}
+/**** Popup Rounded Corners Button ****/
+.wik-rounded.wik-side_bottom{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.wik-rounded.wik-side_bottom .wik-button{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* For Music Player*/
+#playerH #list{ right:5px; }
+
+#playerH .playerTop {
+    top: 0px;
+    left:6px;
+    position: absolute;
+    z-index: 530; 
+    width:498px; 
+    height:206px;
+    background: url(https://lh3.googleusercontent.com/MaRGFfq5mkhszzAXKwXevQpODKcPwPa4cIrexfSJEyfJlWDHWhZYxgjFc8E_hqu2dDfPk1-MYUvrtdkIeJf1Kslqf-XDYO2sT55p7NC4Ctl-yFYmkW3CDf8BN0Ae-8IlrtFyGfP293NcfKeOBv0VCin6ktV2X5z-24TfZVPZAiLR0XLzui_eujp9tMZRS7Uu4hLCsBGnmJF58wXF8d76dLPqotwh4WwdxubQEFPjYiylUkDESMzO4_yeH-fZ8BFunar81rtfZNPMyfLKTIwFpno4FPjx0z3gFixLHHO5yF2hn9N-yqj2acjRxG-BqA6hPJuSeMQTl-5CXsdph-vEzvFPzLB85Ex91TVc9nkOdFidAlGtWtK1SXZGqEnt5lcmF-bM2W0xkDzoURN4Z8R1n3Noc6jwvMXmi-9GJk7DhTl7khdPoOIlt8oHgfT5YpuubJUx2NVmAsXC_eNDYi7h30yI4j_4OTbkHWjjiF_NQwNCINePfDosAk7CDgY_A7jfr5kRUhGSBAmy8BI0Pb7EnL2pvZlRLt72HM05rpzshhLjiJET7tsMZL-tsFqOuoimwXwckO28HcGjZUTm25hEutHsdMvz-7OVXhKm5HTusA=w395-h614-no) no-repeat;
+}
+#playerH .playerBottom {
+    top: 206px;
+    left:6px;
+    position: absolute;
+    z-index: 528; 
+    width:498px; 
+    height:162px;
+    background: url(playerHbgBottom.jpg) no-repeat;
+}
+
+/* Seeker and Slider*/
+
+#playerH #seeker{ left:42px;top:181px; width:348px; }
+#playerH #seekerBase{ 
+    height: 4px;
+    background-color: #eee;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 550; 
+
+    width:100%;  top:8px; left:0px; 
+}
+#playerH #seekerBuffered{ 
+    background: #82b228; /* Old browsers */
+    background: -moz-linear-gradient(left,  #82b228 0%, #c7e782 38%, #c7e782 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#82b228), color-stop(38%,#c7e782), color-stop(100%,#c7e782)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #82b228 0%,#c7e782 38%,#c7e782 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #82b228 0%,#c7e782 38%,#c7e782 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #82b228 0%,#c7e782 38%,#c7e782 100%); /* IE10+ */
+    background: linear-gradient(to right,  #82b228 0%,#c7e782 38%,#c7e782 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82b228', endColorstr='#c7e782',GradientType=1 ); /* IE6-9 */
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 555;
+    top: 8px;
+    left:0; 
+
+    width:100%; 
+    height:4px; 
+}
+
+#playerH #seekerSliderBase {
+    background-image:url('SeekerSliderHandle.png');
+    background-repeat:no-repeat;
+    display: block;
+    width: 13px;
+    height: 24px;
+    z-index: 580;
+    top:-2px;
+    background-position:0px 0px !important;
+}
+#playerH #seekerSliderBase:active {
+    background-position:0px -24px !important;
+}
+
+/* Volume Slider/Handle */
+#playerH #volume{ 
+    background: #8c8c8c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8c8c8c 0%, #c9c9c9 38%, #e9e9e9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8c8c8c), color-stop(38%,#c9c9c9), color-stop(100%,#e9e9e9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #8c8c8c 0%,#c9c9c9 38%,#e9e9e9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #8c8c8c 0%,#c9c9c9 38%,#e9e9e9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #8c8c8c 0%,#c9c9c9 38%,#e9e9e9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #8c8c8c 0%,#c9c9c9 38%,#e9e9e9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8c8c', endColorstr='#e9e9e9',GradientType=0 ); /* IE6-9 */
+
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 1px 1px 1px #fff;
+    -webkit-box-shadow: 1px 1px 1px #fff;
+    box-shadow: 1px 1px 1px #fff;
+
+    width:80px; 
+    height: 7px; 
+    left:53px; 
+    top:88px;
+}
+
+#playerH #volumeSlider {
+    background-image:url('VolumeHandle.png');
+    background-repeat:no-repeat;
+    display: block;
+    width: 21px;
+    height: 32px;
+    z-index: 580;
+    top:-13px;
+    background-position:0px 0px !important;
+}
+#playerH #volumeSlider:active {
+    background-position:0px -32px !important;
+}
+
+/* Timer */
+#playerH #timer{ 
+    right:37px;
+    top:186px; 
+    color:#fff;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Display of Song name */
+#playerH #title{ 
+    left:108px;  
+    top:20px;
+    color:#5e5353;
+    
+    width: 280px; 
+    height: 30px;
+    padding-top: 5px;
+    cursor: help;
+ 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    text-align: center;
+    overflow: hidden; 
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Setting/Others Buttons */
+#playerH #repeatButton a, #playerH #entertainmentButton a, #playerH #playlistButton a,
+#playerH #repeatOnceButton a, #playerH #repeatAllButton a {
+    background-image:url('ButtonSet.png');
+    background-repeat:no-repeat;
+    display: block;
+    width: 32px;
+    height: 33px;
+    outline: 0;
+}
+
+#playerH #repeatButton {right: 110px;top: 75px;  position:absolute; z-index: 580;}
+#playerH #repeatButton a {background-position:-96px 0px !important;}
+#playerH #repeatButton a:active {background-position:-96px -33px !important;}
+
+#playerH #repeatOnceButton {right: 110px;top: 75px;  position:absolute; z-index: 580;}
+#playerH #repeatOnceButton a {background-position:-32px 0px !important;}
+#playerH #repeatOnceButton a:active {background-position:-32px -33px !important;}
+
+#playerH #repeatAllButton {right: 110px;top: 75px;  position:absolute; z-index: 580;}
+#playerH #repeatAllButton a {background-position:-64px 0px !important;}
+#playerH #repeatAllButton a:active {background-position:-64px -33px !important;}
+
+#playerH #entertainmentButton {right: 75px;top: 75px;  position:absolute; z-index: 580;}
+#playerH #entertainmentButton a {background-position:0px 0px !important;}
+#playerH #entertainmentButton a:active {background-position:0px -33px !important;}
+
+#playerH #playlistButton {right: 40px;top: 75px;  position:absolute; z-index: 580;}
+#playerH #playlistButton a {background-position:-128px 0px !important;}
+#playerH #playlistButton a:active {background-position:-128px -33px !important;}
+
+/* Play/Stop buttons */
+#playerH #play a, #playerH #pause a {
+    background-image:url('playStopButtonSet.png');
+    background-repeat:no-repeat;
+    display: block;
+    width: 98px;
+    height: 98px;
+    outline: 0;
+}
+
+#playerH #play {left: 200px;top: 40px;  position:absolute; z-index: 580;}
+#playerH #play a {background-position:-98px 0px !important;}
+#playerH #play a:active {background-position:-98px -98px !important;}
+
+#playerH #pause {left: 200px;top: 40px;  position:absolute; z-index: 580;}
+#playerH #pause a {background-position:0px 0px !important;}
+#playerH #pause a:active {background-position:0px -98px !important;}
+
+/* Next/Prev buttons */
+#playerH #next a, #playerH #previous a {
+    background-image:url('nextPrevButtonSet.png');
+    background-repeat:no-repeat;
+    display: block;
+    width: 64px;
+    height: 64px;
+    outline: 0;
+}
+
+#playerH #next {right: 150px;top: 58px;  position:absolute; z-index: 580;}
+#playerH #next a {background-position:0px 0px !important;}
+#playerH #next a:active {background-position:0px -64px !important;}
+
+#playerH #previous {left: 146px;top: 58px;  position:absolute; z-index: 580;}
+#playerH #previous a {background-position:-64px 0px !important;}
+#playerH #previous a:active {background-position:-64px -64px !important;}
+
+
+/* Below CSS are for Retina */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (-ms-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio: 2) {
+
+            .wik-button .icon {    
+                background: url('icon-X2.png') no-repeat;
+                background-size: 32px  32px;
+            }
+
+             #playerH .playerTop {
+                background: url('playerHbgTop-X2.jpg') no-repeat;
+                background-size: 498px  206px;
+            }    
+
+            #playerH .playerBottom {
+                background: url('playerHbgBottom-X2.jpg') no-repeat;
+                background-size: 498px  162px;
+            }        
+
+            #playerH #playlistButton a, #playerH #entertainmentButton a, #playerH #repeatButton a,
+            #playerH #repeatOnceButton a, #playerH #repeatAllButton a {
+                background: url('ButtonSet-X2.png') no-repeat;
+                background-size: 160px 64px;
+            }
+
+            #playerH #play a, #playerH #pause a {
+                background: url('playStopButtonSet-X2.png') no-repeat;
+                background-size: 196px 196px;
+            }
+
+            #playerH #next a, #playerH #previous a {
+                background: url('nextPrevButtonSet-X2.png') no-repeat;
+                background-size: 128px 128px;
+            }
+
+            #playerH #volumeSlider {
+                background: url('VolumeHandle-X2.png') no-repeat;
+                background-size: 21px 64px;
+            }
+
+            #playerH #seekerSliderBase {
+                background: url('SeekerSliderHandle-X2.png') no-repeat;
+                background-size: 13px 48px;
+            }
+}
